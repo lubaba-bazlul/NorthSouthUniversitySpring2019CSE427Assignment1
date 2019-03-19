@@ -4,7 +4,7 @@ package tStackTest;
 
 
 	
-	public class GenericStack<T> {
+	public class Stack<T> {
 		
 		int size;
 		StackElement<T> top;
@@ -23,13 +23,13 @@ package tStackTest;
 		}
 		
 		public T pop(){
-			StackElement<T> previousTop = top;
+			StackElement<T> oldTop = top;
 			if(size==0){
 				return null;
 			}
 			top = top.getNext();
 			size -- ;
-			return previousTop.getElement();
+			return oldTop.getElement();
 		}
 		
 		public T peek(){

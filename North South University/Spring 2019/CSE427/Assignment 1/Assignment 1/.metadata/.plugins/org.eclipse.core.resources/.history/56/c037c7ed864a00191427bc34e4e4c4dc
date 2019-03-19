@@ -1,0 +1,40 @@
+package tStackTest;
+
+public class GenericStack <T> {
+	
+	int size;
+	StackElement<T> top;
+	
+	public GenericStack(){
+		size=0;
+		top= null;
+		
+	}
+
+	public void push (T X){
+		StackElement<T> X = new StackElement<T>(X,top);
+		
+		top = X;
+		size++;
+		
+		
+		
+	}
+	
+	
+	public T pop (){
+		StackElement<T> previousTop = top;
+		if (top == null){
+			System.out.print("No element to pop");
+		}
+		top= top.getNext();
+		
+		size--;
+		return previousTop.getElement();
+	}
+	public boolean isEmpty (){
+	if (size==0){
+		return true;}
+	return false;
+	}
+}
