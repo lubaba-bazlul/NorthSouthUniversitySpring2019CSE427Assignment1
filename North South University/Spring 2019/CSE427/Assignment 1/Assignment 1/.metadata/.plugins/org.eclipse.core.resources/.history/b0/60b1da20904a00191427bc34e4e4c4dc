@@ -35,8 +35,6 @@ public GenericStack<String> obj = new GenericStack<String>();
 	}*/
 	public void testLIFO(){
 		String txt = "There";
-		String txt1 = "Hey";
-		obj.push(txt1);
 		obj.push(txt);
 		assertEquals(obj.pop(), txt);
 	}
