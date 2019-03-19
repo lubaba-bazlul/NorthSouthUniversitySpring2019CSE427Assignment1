@@ -26,21 +26,12 @@ public class TestGenericStack {
 	@After
 	public void tearDown() throws Exception {
 	}*/
-public GenericStack<String> obj = new GenericStack<String>();
+public GenericStack obj;
 	@Test
-	/*public void testPeek() {
+	public void testPush() {
 		String txt = "Hello";
 		obj.push(txt);
 		assertEquals(obj.peek(),txt);
-	}*/
-	public void testLIFO(){
-		String txt = "There";
-		obj.push(txt);
-		assertEquals(obj.pop(), txt);
 	}
-	
-	
-	
-
 
 }

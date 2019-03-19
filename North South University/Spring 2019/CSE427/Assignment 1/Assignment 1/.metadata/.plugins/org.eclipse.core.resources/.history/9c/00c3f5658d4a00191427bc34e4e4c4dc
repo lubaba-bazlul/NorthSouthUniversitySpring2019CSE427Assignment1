@@ -31,8 +31,8 @@ public GenericStack<String> obj = new GenericStack<String>();
 	/*public void testPeek() {
 		String txt = "Hello";
 		obj.push(txt);
-		assertEquals(obj.peek(),txt);
-	}*/
+		assertEquals(obj.peek(),txt);*/
+	}
 	public void testLIFO(){
 		String txt = "There";
 		obj.push(txt);
