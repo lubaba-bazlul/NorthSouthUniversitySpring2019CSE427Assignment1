@@ -19,16 +19,10 @@ import org.junit.Test;
 
 
 import java.util.Arrays;
-//import java.util.Collection;
-
-import static org.junit.Assert.assertEquals;
-
-@RunWith(Theories.class)
-
+import java.util.Collection;
 
 public class TestGenericStack {
- Integer value;
- 
+
 	/*@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -44,18 +38,7 @@ public class TestGenericStack {
 	@After
 	public void tearDown() throws Exception {
 	}*/
- 
- public TestGenericStack(int value){
-	 this.value = value;
- }
-	
-	@DataPoints
-	public static String[] inputAsString ={"haha","lala","blabla"};
-	
-	
-	
 public GenericStack<String> obj = new GenericStack<String>();
-public GenericStack<Double> obj1 = new GenericStack<Double>();
 	@Test
 	/*public void testPeek() {
 		String txt = "Hello";
@@ -93,31 +76,7 @@ public GenericStack<Double> obj1 = new GenericStack<Double>();
 		assertTrue(obj.isEmpty());
 	}
 	
-	
-	@Test
-	public void testPop(){
-		obj1.push(3.14);
-		obj1.push(null);
-		assertEquals(null,obj.pop());
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	@Theory
-	public void testPushingString(String value) throws Exception{
-		System.out.println(value);
 		
-		assertEquals(value,obj.push(value));
-	}
-		
-	
-	
 	}
 	
 	
