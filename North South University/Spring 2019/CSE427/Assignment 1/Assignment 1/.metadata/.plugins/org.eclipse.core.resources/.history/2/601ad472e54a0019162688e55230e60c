@@ -47,16 +47,7 @@ public GenericStack<String> obj = new GenericStack<String>();
 		assertTrue(obj.isEmpty());
 	}
 
-	@Test
-	public void testPush(){
-		int noOfPushes = 10;
-				for(int i=0; i<noOfPushes; i++){
-					obj.push("Haha");
-					
-				}
-				assertEquals(obj.size, noOfPushes);
-		
-	}
+	
 		
 	}
 	

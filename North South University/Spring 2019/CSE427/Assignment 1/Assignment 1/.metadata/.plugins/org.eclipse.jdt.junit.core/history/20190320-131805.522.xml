@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestGenericStack" project="Assignment 1" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="tStackTest.TestGenericStack" time="0.001">
+    <testcase name="testLIFO" classname="tStackTest.TestGenericStack" time="0.001"/>
+    <testcase name="testIsEmpty" classname="tStackTest.TestGenericStack" time="0.0"/>
+  </testsuite>
+</testrun>
